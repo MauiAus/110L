@@ -332,6 +332,6 @@ LAB5:    xsi_set_current_line(62, ng0);
 extern void work_m_00000000004093713498_2073120511_init()
 {
 	static char *pe[] = {(void *)NetDecl_16_0,(void *)Cont_47_1,(void *)Cont_48_2,(void *)Cont_49_3,(void *)Initial_51_4,(void *)Initial_59_5};
-	xsi_register_didat("work_m_00000000004093713498_2073120511", "isim/ttest_isim_beh.exe.sim/work/m_00000000004093713498_2073120511.didat");
+	xsi_register_didat("work_m_00000000004093713498_2073120511", "isim/jk_test_isim_beh.exe.sim/work/m_00000000004093713498_2073120511.didat");
 	xsi_register_executes(pe);
 }

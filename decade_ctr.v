@@ -22,16 +22,13 @@ module jk_ff(j,k,clk,q);
 output q;
 reg q;
 input j,k,clk;
+initial q<=1;
 always@(posedge clk)
 case({j,k})
 	2'b00: q<=q;
 	2'b01: q<=0;
 	2'b10: q<=1;
 	2'b11: q<=~q;
-endcase
-always@(negedge clk)
-case({j,k})
-	2'b00: q<=1;
 endcase
 endmodule
 
@@ -40,16 +37,13 @@ module jk_ff2(j,k,clk,q,qd);
 input j,k,clk;
 output reg q;
 output qd;
+initial q<=0;
 always@(posedge clk) 
 case({j,k})
 2'b00: q<=q;
 2'b01: q<=0;
 2'b10: q<=1;
 2'b11: q<=~q;
-endcase
-always@(negedge clk)
-case({j,k})
-	2'b00: q<=1;
 endcase
 assign qd=~q;	
 endmodule
@@ -70,27 +64,22 @@ jk_ff FFB(j1,j1,clk,b);
 jk_ff FFC(j2,j2,clk,c);
 
 assign cnt = ({a,b,c,d});
-
 endmodule
 
 module dec_ctr_ver2(q,clk,rst);
-output reg [3:0] q;
+output [3:0] q;
+reg [3:0] q;
 input clk, rst;
+initial q = 0;
 
 always @(posedge clk or negedge rst)
 begin
 if(~rst)
-q=4'b0;
+q<=4'b0;
 
 else if(q==4'b1001)
-q=4'b0;
+q<=4'b0;
 else
-q=q+1'b1;
+q<=q+1'b1;
 end
-endmodule
-
-module test(x,y,z);
-input x,y;
-output z;
-assign z = x && y;
 endmodule

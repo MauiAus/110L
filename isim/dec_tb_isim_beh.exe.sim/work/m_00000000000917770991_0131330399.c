@@ -22,16 +22,29 @@
 #define alloca _alloca
 #endif
 static const char *ng0 = "C:/Users/110L/Desktop/110/Proj/decade_ctr.v";
-static unsigned int ng1[] = {0U, 0U};
-static unsigned int ng2[] = {1U, 0U};
-static int ng3[] = {0, 0};
-static unsigned int ng4[] = {2U, 0U};
-static int ng5[] = {1, 0};
+static int ng1[] = {1, 0};
+static unsigned int ng2[] = {0U, 0U};
+static unsigned int ng3[] = {1U, 0U};
+static int ng4[] = {0, 0};
+static unsigned int ng5[] = {2U, 0U};
 static unsigned int ng6[] = {3U, 0U};
 
 
 
-static void Always_25_0(char *t0)
+static void Initial_25_0(char *t0)
+{
+    char *t1;
+    char *t2;
+
+LAB0:    xsi_set_current_line(25, ng0);
+    t1 = ((char*)((ng1)));
+    t2 = (t0 + 1768);
+    xsi_vlogvar_wait_assign_value(t2, t1, 0, 0, 1, 0LL);
+
+LAB1:    return;
+}
+
+static void Always_26_1(char *t0)
 {
     char t4[8];
     char t13[8];
@@ -60,39 +73,39 @@ static void Always_25_0(char *t0)
     unsigned int t25;
     unsigned int t26;
 
-LAB0:    t1 = (t0 + 2688U);
+LAB0:    t1 = (t0 + 2936U);
     t2 = *((char **)t1);
     if (t2 == 0)
         goto LAB2;
 
 LAB3:    goto *t2;
 
-LAB2:    xsi_set_current_line(25, ng0);
+LAB2:    xsi_set_current_line(26, ng0);
     t2 = (t0 + 3256);
     *((int *)t2) = 1;
-    t3 = (t0 + 2720);
+    t3 = (t0 + 2968);
     *((char **)t3) = t2;
     *((char **)t1) = &&LAB4;
 
 LAB1:    return;
-LAB4:    xsi_set_current_line(26, ng0);
+LAB4:    xsi_set_current_line(27, ng0);
     t5 = (t0 + 1208U);
     t6 = *((char **)t5);
     t5 = (t0 + 1048U);
     t7 = *((char **)t5);
     xsi_vlogtype_concat(t4, 2, 2, 2U, t7, 1, t6, 1);
 
-LAB5:    t5 = ((char*)((ng1)));
+LAB5:    t5 = ((char*)((ng2)));
     t8 = xsi_vlog_unsigned_case_compare(t4, 2, t5, 2);
     if (t8 == 1)
         goto LAB6;
 
-LAB7:    t2 = ((char*)((ng2)));
+LAB7:    t2 = ((char*)((ng3)));
     t8 = xsi_vlog_unsigned_case_compare(t4, 2, t2, 2);
     if (t8 == 1)
         goto LAB8;
 
-LAB9:    t2 = ((char*)((ng4)));
+LAB9:    t2 = ((char*)((ng5)));
     t8 = xsi_vlog_unsigned_case_compare(t4, 2, t2, 2);
     if (t8 == 1)
         goto LAB10;
@@ -105,7 +118,7 @@ LAB11:    t2 = ((char*)((ng6)));
 LAB13:
 LAB14:    goto LAB2;
 
-LAB6:    xsi_set_current_line(27, ng0);
+LAB6:    xsi_set_current_line(28, ng0);
     t9 = (t0 + 1768);
     t10 = (t9 + 56U);
     t11 = *((char **)t10);
@@ -113,19 +126,19 @@ LAB6:    xsi_set_current_line(27, ng0);
     xsi_vlogvar_wait_assign_value(t12, t11, 0, 0, 1, 0LL);
     goto LAB14;
 
-LAB8:    xsi_set_current_line(28, ng0);
-    t3 = ((char*)((ng3)));
+LAB8:    xsi_set_current_line(29, ng0);
+    t3 = ((char*)((ng4)));
     t5 = (t0 + 1768);
     xsi_vlogvar_wait_assign_value(t5, t3, 0, 0, 1, 0LL);
     goto LAB14;
 
-LAB10:    xsi_set_current_line(29, ng0);
-    t3 = ((char*)((ng5)));
+LAB10:    xsi_set_current_line(30, ng0);
+    t3 = ((char*)((ng1)));
     t5 = (t0 + 1768);
     xsi_vlogvar_wait_assign_value(t5, t3, 0, 0, 1, 0LL);
     goto LAB14;
 
-LAB12:    xsi_set_current_line(30, ng0);
+LAB12:    xsi_set_current_line(31, ng0);
     t3 = (t0 + 1768);
     t5 = (t3 + 56U);
     t6 = *((char **)t5);
@@ -176,61 +189,10 @@ LAB20:    t21 = *((unsigned int *)t13);
 
 }
 
-static void Always_32_1(char *t0)
-{
-    char t4[8];
-    char *t1;
-    char *t2;
-    char *t3;
-    char *t5;
-    char *t6;
-    char *t7;
-    int t8;
-    char *t9;
-    char *t10;
-
-LAB0:    t1 = (t0 + 2936U);
-    t2 = *((char **)t1);
-    if (t2 == 0)
-        goto LAB2;
-
-LAB3:    goto *t2;
-
-LAB2:    xsi_set_current_line(32, ng0);
-    t2 = (t0 + 3272);
-    *((int *)t2) = 1;
-    t3 = (t0 + 2968);
-    *((char **)t3) = t2;
-    *((char **)t1) = &&LAB4;
-
-LAB1:    return;
-LAB4:    xsi_set_current_line(33, ng0);
-    t5 = (t0 + 1208U);
-    t6 = *((char **)t5);
-    t5 = (t0 + 1048U);
-    t7 = *((char **)t5);
-    xsi_vlogtype_concat(t4, 2, 2, 2U, t7, 1, t6, 1);
-
-LAB5:    t5 = ((char*)((ng1)));
-    t8 = xsi_vlog_unsigned_case_compare(t4, 2, t5, 2);
-    if (t8 == 1)
-        goto LAB6;
-
-LAB7:
-LAB8:    goto LAB2;
-
-LAB6:    xsi_set_current_line(34, ng0);
-    t9 = ((char*)((ng5)));
-    t10 = (t0 + 1768);
-    xsi_vlogvar_wait_assign_value(t10, t9, 0, 0, 1, 0LL);
-    goto LAB8;
-
-}
-
 
 extern void work_m_00000000000917770991_0131330399_init()
 {
-	static char *pe[] = {(void *)Always_25_0,(void *)Always_32_1};
+	static char *pe[] = {(void *)Initial_25_0,(void *)Always_26_1};
 	xsi_register_didat("work_m_00000000000917770991_0131330399", "isim/dec_tb_isim_beh.exe.sim/work/m_00000000000917770991_0131330399.didat");
 	xsi_register_executes(pe);
 }

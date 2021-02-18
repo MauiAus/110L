@@ -25,7 +25,7 @@ static const char *ng0 = "C:/Users/110L/Desktop/110/Proj/decade_ctr.v";
 
 
 
-static void Cont_62_0(char *t0)
+static void Cont_56_0(char *t0)
 {
     char t4[8];
     char t17[8];
@@ -104,7 +104,7 @@ LAB0:    t1 = (t0 + 4128U);
 
 LAB3:    goto *t2;
 
-LAB2:    xsi_set_current_line(62, ng0);
+LAB2:    xsi_set_current_line(56, ng0);
     t2 = (t0 + 1528U);
     t3 = *((char **)t2);
     memset(t4, 0, 8);
@@ -231,7 +231,7 @@ LAB15:    t36 = *((unsigned int *)t24);
 
 }
 
-static void Cont_63_1(char *t0)
+static void Cont_57_1(char *t0)
 {
     char t4[8];
     char t17[8];
@@ -310,7 +310,7 @@ LAB0:    t1 = (t0 + 4376U);
 
 LAB3:    goto *t2;
 
-LAB2:    xsi_set_current_line(63, ng0);
+LAB2:    xsi_set_current_line(57, ng0);
     t2 = (t0 + 1528U);
     t3 = *((char **)t2);
     memset(t4, 0, 8);
@@ -437,7 +437,7 @@ LAB15:    t36 = *((unsigned int *)t24);
 
 }
 
-static void Cont_64_2(char *t0)
+static void Cont_58_2(char *t0)
 {
     char t4[8];
     char t17[8];
@@ -516,7 +516,7 @@ LAB0:    t1 = (t0 + 4624U);
 
 LAB3:    goto *t2;
 
-LAB2:    xsi_set_current_line(64, ng0);
+LAB2:    xsi_set_current_line(58, ng0);
     t2 = (t0 + 2008U);
     t3 = *((char **)t2);
     memset(t4, 0, 8);
@@ -643,7 +643,7 @@ LAB15:    t36 = *((unsigned int *)t24);
 
 }
 
-static void Cont_65_3(char *t0)
+static void Cont_59_3(char *t0)
 {
     char t4[8];
     char t17[8];
@@ -722,7 +722,7 @@ LAB0:    t1 = (t0 + 4872U);
 
 LAB3:    goto *t2;
 
-LAB2:    xsi_set_current_line(65, ng0);
+LAB2:    xsi_set_current_line(59, ng0);
     t2 = (t0 + 2488U);
     t3 = *((char **)t2);
     memset(t4, 0, 8);
@@ -849,7 +849,7 @@ LAB15:    t36 = *((unsigned int *)t24);
 
 }
 
-static void Cont_66_4(char *t0)
+static void Cont_60_4(char *t0)
 {
     char t4[8];
     char t18[8];
@@ -925,7 +925,7 @@ LAB0:    t1 = (t0 + 5120U);
 
 LAB3:    goto *t2;
 
-LAB2:    xsi_set_current_line(66, ng0);
+LAB2:    xsi_set_current_line(60, ng0);
     t2 = (t0 + 2648U);
     t3 = *((char **)t2);
     memset(t4, 0, 8);
@@ -1047,7 +1047,7 @@ LAB15:    t37 = *((unsigned int *)t25);
 
 }
 
-static void Cont_72_5(char *t0)
+static void Cont_66_5(char *t0)
 {
     char t3[8];
     char *t1;
@@ -1077,7 +1077,7 @@ LAB0:    t1 = (t0 + 5368U);
 
 LAB3:    goto *t2;
 
-LAB2:    xsi_set_current_line(72, ng0);
+LAB2:    xsi_set_current_line(66, ng0);
     t2 = (t0 + 2008U);
     t4 = *((char **)t2);
     t2 = (t0 + 1848U);
@@ -1115,7 +1115,7 @@ LAB1:    return;
 
 extern void work_m_00000000003479950173_2635071858_init()
 {
-	static char *pe[] = {(void *)Cont_62_0,(void *)Cont_63_1,(void *)Cont_64_2,(void *)Cont_65_3,(void *)Cont_66_4,(void *)Cont_72_5};
+	static char *pe[] = {(void *)Cont_56_0,(void *)Cont_57_1,(void *)Cont_58_2,(void *)Cont_59_3,(void *)Cont_60_4,(void *)Cont_66_5};
 	xsi_register_didat("work_m_00000000003479950173_2635071858", "isim/dec_tb_isim_beh.exe.sim/work/m_00000000003479950173_2635071858.didat");
 	xsi_register_executes(pe);
 }
