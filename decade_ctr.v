@@ -22,7 +22,7 @@ module jk_ff(j,k,clk,q);
 output q;
 reg q;
 input j,k,clk;
-initial q<=1;
+initial q<=0;
 always@(posedge clk)
 case({j,k})
 	2'b00: q<=q;

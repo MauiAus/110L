@@ -55,7 +55,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1613672393" xil_pn:in_ck="-4387944821568752992" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1613672393">
+    <transform xil_pn:end_ts="1613672654" xil_pn:in_ck="-4387944821568752992" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1613672654">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="dec_tb.v"/>
@@ -75,7 +75,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1613672393" xil_pn:in_ck="-4387944821568752992" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1613672393">
+    <transform xil_pn:end_ts="1613672654" xil_pn:in_ck="-4387944821568752992" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1613672654">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="dec_tb.v"/>
@@ -83,7 +83,7 @@
       <outfile xil_pn:name="jk_test.v"/>
       <outfile xil_pn:name="tb_v2.v"/>
     </transform>
-    <transform xil_pn:end_ts="1613672396" xil_pn:in_ck="-4387944821568752992" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-189967077701607151" xil_pn:start_ts="1613672393">
+    <transform xil_pn:end_ts="1613672657" xil_pn:in_ck="-4387944821568752992" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-189967077701607151" xil_pn:start_ts="1613672654">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="dec_tb_beh.prj"/>
@@ -93,7 +93,7 @@
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1613672397" xil_pn:in_ck="5229145959607977890" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-5028224753387171852" xil_pn:start_ts="1613672396">
+    <transform xil_pn:end_ts="1613672657" xil_pn:in_ck="5229145959607977890" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-5028224753387171852" xil_pn:start_ts="1613672657">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="dec_tb_isim_beh.wdb"/>
@@ -131,6 +131,8 @@
     <transform xil_pn:end_ts="1613672365" xil_pn:in_ck="5213635683598279330" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-5073740470690145148" xil_pn:start_ts="1613672349">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name=".lso"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="decade_counter.lso"/>
