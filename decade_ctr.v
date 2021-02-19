@@ -63,9 +63,12 @@ jk_ff FFA(in,in,clk,a);
 jk_ff FFB(j1,j1,clk,b);
 jk_ff FFC(j2,j2,clk,c);
 
-assign cnt = ({a,b,c,d});
+assign cnt = ({d,c,b,a});
 endmodule
 
+
+
+/*
 module dec_ctr_ver2(q,clk,rst);
 output [3:0] q;
 reg [3:0] q;
@@ -83,3 +86,4 @@ else
 q<=q+1'b1;
 end
 endmodule
+*/

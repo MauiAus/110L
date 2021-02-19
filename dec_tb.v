@@ -37,28 +37,13 @@ module dec_tb;
 		.in(in), 
 		.cnt(cnt)
 	);
-
+	
+	always begin
+		#25 clk=1;
+		#25 clk=0;
+	end
 	initial begin
-		// Initialize Inputs
-		clk = 0;
-		in = 0;
-
-		// Wait 100 ns for global reset to finish
-		#50;clk=1;in=1;#50;clk=0;
-		#50;clk=1;in=1;#50;clk=0;
-		#50;clk=1;in=1;#50;clk=0;
-		#50;clk=1;in=1;#50;clk=0;
-		#50;clk=1;in=1;#50;clk=0;
-		#50;clk=1;in=1;#50;clk=0;
-		#50;clk=1;in=1;#50;clk=0;
-		#50;clk=1;in=1;#50;clk=0;
-		#50;clk=1;in=1;#50;clk=0;
-		#50;clk=1;in=1;#50;clk=0;
-		#50;clk=1;in=1;#50;clk=0;
-		#50;clk=1;in=1;#50;clk=0;
-        
-		// Add stimulus here
-
+		in=1;
 	end
       
 endmodule
